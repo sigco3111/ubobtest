@@ -1,23 +1,21 @@
 {
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/",
-      "destination": "/default.htm"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
+      "src": "default.htm",
+      "use": "@vercel/static"
     }
   ],
-  "headers": [
+  "rewrites": [
     {
       "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000"
-        }
-      ]
+      "destination": "/default.htm"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/default.htm"
     }
   ]
 }
