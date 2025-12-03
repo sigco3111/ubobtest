@@ -1,0 +1,305 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<style>
+*{margin:0  ;padding:0;}:focus,:active {outline:0}img{border:0} 
+body{
+	background-color:#fff;
+}
+#bgImg{
+	margin:0 auto  ;
+	float:center;
+	width:100%;
+	text-align:center;
+	overflow:hidden; z-index:1;
+}
+#btnImg{
+	margin:0 auto  ;
+	float:center;
+	width:100%;
+	height:190px;
+	text-align:center;
+	vertical-align:top;
+	position:absolute;overflow:hidden; z-index:2;
+	bottom:230px;
+}
+</style>
+<noscript>
+<style>
+#bgImg{
+	float:left;
+	width:640px;
+	text-align:center;
+	overflow:hidden; z-index:1;
+}
+
+#btnImg2{
+	
+	float:left;
+	width:640px;
+	height:190px;
+	top:570px;
+	text-align:center;
+	vertical-align:top;
+	position:absolute;overflow:hidden; z-index:2;
+}
+</style>
+</noscript>
+<title>::: APP_DOWNLOAD :::</title>
+<body>
+
+<script type="text/javascript">
+// To avoid the "protocol not supported" alert, fail must open another app.
+var appstorefail = "http://learning2015.ubob.com/down/appdown";
+function applink1(fail){
+    return function(){
+        var clickedAt = +new Date;
+        // During tests on 3g/3gs this timeout fires immediately if less than 500ms.
+        setTimeout(function(){
+            // To avoid failing on return to MobileSafari, ensure freshness!
+            if (+new Date - clickedAt < 2000){
+                window.location = fail;
+            }
+        }, 500);    
+    };
+}
+document.getElementById("applink1").onclick = applink1(appstorefail);
+
+var timeout;
+function preventPopup() {
+  clearTimeout(timeout);
+  timeout = null;
+  window.removeEventListener('pagehide', preventPopup);
+}
+function applink2() {
+  document.location = "com.ubob.b2b.other:godetail&0e2b9634-77dc-4207-9f10-d1e9a9c089a9";
+
+  timeout = setTimeout(function(){
+    if(confirm('앱이 설치되어 있지 않습니다. 다운로드 페이지로 이동하시겠습니까?')){
+      document.location = "http://learning2015.ubob.com/down/appdown";
+    }
+  }, 100);
+  window.addEventListener('pagehide', preventPopup);
+}
+</script>
+
+<BR><BR>ubob iOS앱 다운로드 테스트 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="itms-services://?action=download-manifest&url=https://ubobfiles.ubob.com/appfiles/ios2015/v3.plist">
+V3 ubobfiles 다운로드</a><BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="itms-services://?action=download-manifest&url=https://ubobfiles.ubob.com/appfiles/ios2020/ubob2020_ios.plist">
+개발테스트앱 ubobfiles 다운로드</a>
+
+<BR><BR>유밥x워크플레이스 iOS앱 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://ncloud.page.link/?link=https://ubob2020.ubob.com/app?type=MYCLASS&ibi=com.ubob.b2b.ncloud&efr=1&isi=1617759072">
+동적링크1 </a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://ncloud.page.link/?type=MYCLASS&ibi=com.ubob.b2b.ncloud&efr=1&isi=1617759072">
+동적링크2 </a>
+
+<BR><BR>ubob2015 iOS앱 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/s/hl6ctwwpgc1qw2q/v3.plist">
+V3 드롭박스 다운로드</a>
+
+
+<BR><BR>ubob2020 iOS앱 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/s/8dr34ah3kcop536/ubob2020_ios.plist">
+개발테스트앱 드롭박스 다운로드</a>
+
+<BR><BR>2020 스킴 테스트 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=HOME&ibi=com.ubob.b2b.2020&efr=1">
+동적링크zzz</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app">
+동적링크</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=MYCLASS:tokenId=c1643aaf-b38e-42ac-a5d0-972817f49bfb:tokenValue=48fb224d72f38de23ffd984332bd25b3da9421f5f76065fd2731e3524ee92398a&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 내강의실 토큰</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=HOME:tokenId=c70bfa26-8f46-4790-98f4-9a0ac2df83b8&tokenValue=84b71f3f-6d35-42e5-8f0f-73e3f17a7a96&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 토근로그인</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SERIESDETAIL:option1=38435400:tokenId=c70bfa26-8f46-4790-98f4-9a0ac2df83b8&tokenValue=84b71f3f-6d35-42e5-8f0f-73e3f17a7a96&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 토근로그인 + 과정상세 series id로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SERIESDETAIL:option1=38435400&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 과정상세 series id로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=ORIREFID:option1=6001465&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 과정상세 oriref id로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=PREVIEW:option1=4769592&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 미리보기 previewModel id로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=PREVIEW&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 미리보기로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SNACK&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 스낵 목록으로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SNACK:option1=2&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 스낵 특정 카테고리 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SNACK:option1=0:option2=5010580&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 스넥 상세화면 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=CATEGORY&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 카테고리탭 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=CATEGORY:option1=38435111&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 특정 카테고리 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=BESTAUTHOR&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 명강사 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=BESTAUTHOR:option1=4913236&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 명강사 상세화면 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SERIESHOT:option1=TOP50MONTH&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 인기과정 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=LASTPLAY&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 이어보기 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SERIESWISH&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 찜한과정 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SERIESLIKE&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 좋아요한과정 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SERIESNEW&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 신규과정 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=RECOMMENDTODAY&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 오늘의추천 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=RECOMMENDSERIES:option1=ORDERHISTORY&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 이력추천 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=RECOMMENDSERIES&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 이력추천 디폴트 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=MYCLASS&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 내강의실 탭 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SEARCH&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 검색 탭 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SEARCH:option1=기업&ibi=com.ubob.b2b.2020&efr=11">
+동적링크 검색</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=STATISTICS&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 나의 학습현황 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=CONTINUEPLAY&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 최근 강좌 재생 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SURVEY&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 설문조사 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=SURVEY:option1=49218454&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 특정 설문조사 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=CEXAM&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 CEXAM 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://grpa.page.link/?link=https://ubob2020.ubob.com/app?type=CEXAM:option1=36325937&ibi=com.ubob.b2b.2020&efr=1">
+동적링크 특정 설문조사 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<BR><BR>2015 스킴 테스트 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?hometab=WHO'S HOT:token=af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 탭이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?hometab=3:token=af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 리뉴얼 탭이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?godetailwithoutlogin=734cb92a-b7a2-407b-9ef4-045a59fcc9ec&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 과정상세 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?godetailwithlogin=734cb92a-b7a2-407b-9ef4-045a59fcc9ec&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 과정상세 이동(로그인 필수)</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?godetailwithtoken=734cb92a-b7a2-407b-9ef4-045a59fcc9ec:token=af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 과정상세 이동(토큰으로 로그인 후)</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?categorylist=6E532672-3472-4C57-A728-7052A33D6B17,8A9AB6F7-129C-4AE8-AD27-F77D3D533ADF:token=2d879b46-ea58-4515-a352-65f9f205f230&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 카테고리</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?recommendlist=personal:token=2d879b46-ea58-4515-a352-65f9f205f230&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 추천과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?upcomminglist=upcomming:token=2d879b46-ea58-4515-a352-65f9f205f230&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 예고과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?news=875aab2f-f727-426a-bc4f-587ffe926c67:token=2d879b46-ea58-4515-a352-65f9f205f230&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 특정뉴스</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?whatsnewlist=list:token=2d879b46-ea58-4515-a352-65f9f205f230&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 신규과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?whoshotid=db1e71ed-b239-44fe-adc0-219e3fc74dde:token=2d879b46-ea58-4515-a352-65f9f205f230&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 특정명강사</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?myroom=list:token=92bde205-e4cb-4d07-b626-79151123e3b8&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 내강의실</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?popularlist=all:listtype=3:token=2d879b46-ea58-4515-a352-65f9f205f230&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 인기과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?continueplay=play&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 이어듣기</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?statistics=1&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 나의 학습현황</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?search=ABC&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 검색</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?orirefid=a3075863-37a4-4dc4-b08d-2a5b3df1d6b3&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 OriRefId를 통한 과정상세 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?token=a71f7f49-901c-4d80-be71-d62457ce33ce&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 토큰로그인 </a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<BR><BR>2015 null 토큰 스킴 테스트 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?hometab=CATEGORIES&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 탭이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?categorylist=6E532672-3472-4C57-A728-7052A33D6B17,8A9AB6F7-129C-4AE8-AD27-F77D3D533ADF&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 카테고리</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?recommendlist=personal&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 추천과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?upcomminglist=upcomming&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 예고과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?news=875aab2f-f727-426a-bc4f-587ffe926c67&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 특정뉴스</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?whatsnewlist=list&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 신규과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?whoshotid=db1e71ed-b239-44fe-adc0-219e3fc74dde&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 특정명강사</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?myroom=list&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 내강의실</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:myroom&list">
+v3 스킴URL 내강의실</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://shz3u.app.goo.gl/?link=https://v32015.ubob.com/down/appdown?popularlist=all:listtype=3&ibi=com.ubob.b2b.other&efr=1">
+v3 동적링크 인기과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<BR><BR>
+</body>
+</html>

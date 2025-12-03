@@ -1,0 +1,37 @@
+<script type="text/javascript"> 
+var isiOS = navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone') || navigator.userAgent.match('iPod'); 
+var isAndroid = navigator.userAgent.match('Android'); 
+var appPath = "app에서 이동할 링크 url"; 
+var prevType = ""; 
+
+// 화면 밖으로 나가거나, 안으로 들어왔을때
+ $(window).on("blur focus", function(e) { 
+ prevType = $(this).data("prevType"); 
+ if (prevType != e.type) { // reduce double fire issues 
+ switch (e.type) { // 화면 밖으로 나갔을때 
+ case "blur": 
+ break; // 화면 안으로 들어왔을때 
+ case "focus": 
+ break; 
+ } 
+ } 
+ $(this).data("prevType", e.type); 
+ }); 
+ 
+ // 이벤트 이동 
+ function moveAttendanceEvent(){ 
+ if(isiOS) { // iOS 실행 
+ setTimeout(function () { 
+ if (prevType == undefined || prevType == 'focus'){ 
+ window.location = "https://v32015.ubob.com/down/appdown"; } }, 2000); 
+ window.location = 'com.ubob.b2b.other' + appPath; } 
+ else if(isAndroid) {
+ setTimeout(function () { 
+ if (prevType == undefined || prevType == 'focus'){ 
+ window.location = "https://play.google.com/store/apps/details?id={패키지명}" 
+ } 
+ }, 500); 
+ window.location = '{app 스키마}://{약속된 파라미터}=' + appPath; } } 
+ </script> 
+ 
+ <a href="javascript:moveAttendanceEvent()">테스트</a>

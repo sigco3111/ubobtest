@@ -1,0 +1,276 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<style>
+*{margin:0  ;padding:0;}:focus,:active {outline:0}img{border:0} 
+body{
+	background-color:#fff;
+}
+#bgImg{
+	margin:0 auto  ;
+	float:center;
+	width:100%;
+	text-align:center;
+	overflow:hidden; z-index:1;
+}
+#btnImg{
+	margin:0 auto  ;
+	float:center;
+	width:100%;
+	height:190px;
+	text-align:center;
+	vertical-align:top;
+	position:absolute;overflow:hidden; z-index:2;
+	bottom:230px;
+}
+</style>
+<noscript>
+<style>
+#bgImg{
+	float:left;
+	width:640px;
+	text-align:center;
+	overflow:hidden; z-index:1;
+}
+
+#btnImg2{
+	
+	float:left;
+	width:640px;
+	height:190px;
+	top:570px;
+	text-align:center;
+	vertical-align:top;
+	position:absolute;overflow:hidden; z-index:2;
+}
+</style>
+</noscript>
+<title>::: APP_DOWNLOAD :::</title>
+<body>
+
+<script type="text/javascript">
+// To avoid the "protocol not supported" alert, fail must open another app.
+var appstorefail = "http://learning2015.ubob.com/down/appdown";
+function applink1(fail){
+    return function(){
+        var clickedAt = +new Date;
+        // During tests on 3g/3gs this timeout fires immediately if less than 500ms.
+        setTimeout(function(){
+            // To avoid failing on return to MobileSafari, ensure freshness!
+            if (+new Date - clickedAt < 2000){
+                window.location = fail;
+            }
+        }, 500);    
+    };
+}
+document.getElementById("applink1").onclick = applink1(appstorefail);
+
+var timeout;
+function preventPopup() {
+  clearTimeout(timeout);
+  timeout = null;
+  window.removeEventListener('pagehide', preventPopup);
+}
+function applink2() {
+  document.location = "com.ubob.b2b.other:godetail&0e2b9634-77dc-4207-9f10-d1e9a9c089a9";
+
+  timeout = setTimeout(function(){
+    if(confirm('앱이 설치되어 있지 않습니다. 다운로드 페이지로 이동하시겠습니까?')){
+      document.location = "http://learning2015.ubob.com/down/appdown";
+    }
+  }, 100);
+  window.addEventListener('pagehide', preventPopup);
+}
+</script>
+
+<BR><BR>2020 스킴 테스트 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+ 실버버는 토큰만료시간이 2분 제한<BR>&nbsp;&nbsp;&nbsp;&nbsp;개발테스트 서버는 무제한<BR><BR><BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+ tokenValue는 암호화하지 않은 값으로 넣도록<BR><BR><BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=HOME">
+스킴 실행</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=MYCLASS&tokenId=0bf3bf30-55db-468f-8914-1af83a5e6cd0&tokenValue=20240326021045665275f4-dae8-4911-bbfd-24b5c2b136c3">
+스킴 내강의실 토큰</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=HOME&tokenId=0bf3bf30-55db-468f-8914-1af83a5e6cd0&tokenValue=20240326021045665275f4-dae8-4911-bbfd-24b5c2b136c3">
+스킴 토근로그인</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SERIESDETAIL&option1=38436580&tokenId=0bf3bf30-55db-468f-8914-1af83a5e6cd0&tokenValue=20240326021045665275f4-dae8-4911-bbfd-24b5c2b136c3">
+스킴 토근로그인 + 과정상세 series id로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SERIESDETAIL&option1=38436580">
+스킴 과정상세 series id로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=ORIREFID&option1=6001465">
+스킴 과정상세 oriref id로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=PREVIEW&option1=4769592">
+스킴 미리보기 previewModel id로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=PREVIEW">
+스킴 미리보기로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SNACK">
+스킴 스낵 목록으로 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SNACK&option1=2">
+스킴 스낵 특정 카테고리 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SNACK&option1=0&option2=5010580">
+스킴 스넥 상세화면 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=CATEGORY">
+스킴 카테고리탭 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=CATEGORY&option1=38435111">
+스킴 특정 카테고리 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=BESTAUTHOR">
+스킴 명강사 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=BESTAUTHOR&option1=4913236">
+스킴 명강사 상세화면 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SERIESHOT&option1=TOP50MONTH">
+스킴 인기과정 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=LASTPLAY">
+스킴 이어보기 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SERIESWISH">
+스킴 찜한과정 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SERIESLIKE">
+스킴 좋아요한과정 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SERIESNEW">
+스킴 신규과정 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=RECOMMENDTODAY">
+스킴 오늘의추천 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=RECOMMENDSERIES&option1=ORDERHISTORY">
+스킴 이력추천 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=RECOMMENDSERIES">
+스킴 이력추천 디폴트 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=MYCLASS">
+스킴 내강의실 탭 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SEARCH">
+스킴 검색 탭 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SEARCH&option1=기업1">
+스킴 검색</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=STATISTICS">
+스킴 나의 학습현황 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=CONTINUEPLAY">
+스킴 최근 강좌 재생 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SURVEY">
+스킴 설문조사 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=SURVEY&option1=49218454">
+스킴 특정 설문조사 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=CEXAM">
+스킴 CEXAM 목록 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.2020:type=CEXAM&option1=36325937">
+스킴 특정 설문조사 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<BR><BR>2015 스킴 테스트 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:hometab&WHO'S HOT:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 탭이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:hometab&3:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 리뉴얼 탭이동 (내강의실)</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:godetailwithlogin&734cb92a-b7a2-407b-9ef4-045a59fcc9ec">
+v3 스킴 과정상세 이동(로그인 필수)</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:godetailwithtoken&734cb92a-b7a2-407b-9ef4-045a59fcc9ec:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 과정상세 이동(토큰으로 로그인 후)</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:categorylist&6E532672-3472-4C57-A728-7052A33D6B17,8A9AB6F7-129C-4AE8-AD27-F77D3D533ADF">
+v3 스킴 카테고리 (2025 로그인 필수)</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:recommendlist&personal:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 추천과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:upcomminglist&upcomming:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 예고과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:news&875aab2f-f727-426a-bc4f-587ffe926c67:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 특정뉴스</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:whatsnewlist&list:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 신규과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:whoshotid&db1e71ed-b239-44fe-adc0-219e3fc74dde:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 특정명강사</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:myroom&list:token&92bde205-e4cb-4d07-b626-79151123e3b8">
+v3 스킴 내강의실</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:popularlist&all:listtype&3:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 인기과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:continueplay&play">
+v3 스킴 이어듣기 (2015전용)</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:statistics&1">
+v3 스킴 나의 학습현황</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:search&ABC">
+v3 스킴 검색 (2015전용, 2025는 검색탭으로 이동시키면된다.)</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:orirefid&a3075863-37a4-4dc4-b08d-2a5b3df1d6b3">
+v3 스킴 OriRefId를 통한 과정상세 이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:token&af4a2a30-6c0d-47b4-b5c1-3bea44ee2ea8">
+v3 스킴 토큰로그인 </a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<BR><BR>2015 null 토큰 스킴 테스트 =============================================================================== <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<!-- <a href="com.ubob.b2b.other:hometab&2"> -->
+<a href="com.ubob.b2b.other:hometab&CATEGORIES">
+v3 스킴 탭이동</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:categorylist&6E532672-3472-4C57-A728-7052A33D6B17,8A9AB6F7-129C-4AE8-AD27-F77D3D533ADF">
+v3 스킴 카테고리</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:recommendlist&personal">
+v3 스킴 추천과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:upcomminglist&upcomming">
+v3 스킴 예고과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:news&875aab2f-f727-426a-bc4f-587ffe926c67">
+v3 스킴 특정뉴스</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:whatsnewlist&list">
+v3 스킴 신규과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:whoshotid&db1e71ed-b239-44fe-adc0-219e3fc74dde">
+v3 스킴 특정명강사</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:myroom&list">
+v3 스킴 내강의실</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="com.ubob.b2b.other:popularlist&all:listtype&3">
+v3 스킴 인기과정</a> <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<BR><BR>
+</body>
+</html>
