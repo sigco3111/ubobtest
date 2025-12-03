@@ -1,18 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "default.htm",
-      "use": "@vercel/static"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/default.htm"
-    }
-  ],
   "routes": [
+    {
+      "src": "/default.htm",
+      "dest": "/default.htm"
+    },
     {
       "src": "/",
       "dest": "/default.htm"

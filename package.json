@@ -1,0 +1,8 @@
+{
+  "name": "ubob-webtest",
+  "version": "1.0.0",
+  "description": "Web test page",
+  "scripts": {
+    "build": "echo 'Build complete'"
+  }
+}
