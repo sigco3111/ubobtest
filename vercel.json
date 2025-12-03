@@ -2,12 +2,12 @@
   "version": 2,
   "routes": [
     {
-      "src": "/default.htm",
-      "dest": "/default.htm"
+      "src": "/",
+      "dest": "/index.html"
     },
     {
-      "src": "/",
-      "dest": "/default.htm"
+      "src": "/default.htm",
+      "dest": "/index.html"
     }
   ]
 }
